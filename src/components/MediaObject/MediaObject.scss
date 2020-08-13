@@ -1,0 +1,24 @@
+.MediaObject {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 1rem;
+
+  &.has-extra-small-media {
+    grid-template-columns: 30px 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  &.has-small-media {
+    grid-template-columns: 75px 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  &.has-large-media {
+    grid-template-columns: 300px 1fr;
+  }
+
+  &__media > * {
+    max-width: 100%;
+    height: auto;
+  }
+}

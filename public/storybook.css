@@ -1,0 +1,16 @@
+:root {
+  --black: #232425;
+  --white: #ffffff;
+  --spaceCadet: #1d3557;
+  --queenBlue: #457b9d;
+  --lightBlue: #a8dadc;
+  --honeyDew: #f1faee;
+  --desire: #e63946;
+}
+/* #root .sidebar-svg-icon {
+  color: var(--queenBlue);
+}
+
+#root .sidebar-subheading {
+  color: var(--spaceCadet);
+} */

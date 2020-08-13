@@ -1,0 +1,72 @@
+html,
+body {
+  width: auto;
+  height: auto;
+}
+body.sb-show-main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.PreviewArea {
+  // background-color: #fff;
+}
+.ComponentsCategory.LayoutSection {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  min-height: 75vh;
+  font-size: 12px;
+  .Bullseye,
+  .MediaObject,
+  .Classic,
+  .TileGrid,
+  .Level,
+  .Column,
+  .Workspace {
+    border: 7px dashed #2a2a2a;
+    text-align: center;
+  }
+  .Bullseye > div,
+  .MediaObject > div,
+  .Classic > div,
+  .TileGrid > div,
+  .Level > div,
+  .Column > div,
+  .Workspace > div {
+    background: #eaeaea;
+    outline: 1px dashed #cacaca;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .Workspace__context {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+}
+
+.ComponentsCategory.LayoutSection.WorkspaceStory {
+  height: 50vh;
+}
+.AppsCategory.ChatSection.ChatStory {
+  height: 50vh;
+}
+
+.ComponentsCategory.ContentSection.MenuStory {
+  width: 250px;
+  max-width: 100%;
+}
+
+.ComponentsCategory.InteractiveSection.TooltipStory {
+  padding: 5rem;
+}
+
+.ComponentsCategory.InteractiveSection.PopoverStory {
+  padding: 5rem;
+}

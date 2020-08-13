@@ -1,0 +1,39 @@
+.Menu {
+  margin: 0;
+  padding: 0;
+  line-height: var(--Menu--line-height, 1.2);
+  font-size: var(--Menu--font-size, 16px);
+
+  &__items {
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 16px auto 16px 16px;
+    grid-template-rows: 1fr auto;
+    justify-content: stretch;
+  }
+  &_icon {
+    grid-column: 1;
+  }
+  &_label {
+    text-decoration: none;
+  }
+  &_indicator {
+    grid-column: 3;
+  }
+  &_action {
+    grid-column: 4;
+  }
+  &__body {
+    grid-column: 1/-1;
+  }
+  &_icon ~ &__body {
+    grid-column: 2/-1;
+  }
+  &__item + &__item {
+    margin-top: var(--mUnit, 8px);
+  }
+  &__items {
+    padding: var(--mUnit, 8px) 0;
+  }
+}

@@ -1,0 +1,6 @@
+.Comment {
+  border: var(--Comment--border, 0px);
+  border-radius: var(--Comment--border-radius, 0px);
+  background: var(--Comment--background, transparent);
+  box-shadow: var(--Comment--box-shadow, none);
+}
